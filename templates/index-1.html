@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services</title>
+</head>
+<style>
+    body{
+        background-image: url("/static/img/services-bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        backdrop-filter: blur(1.5px);
+    }
+    
+        #preloader{
+    background: #dadada url('preloader.gif') no-repeat center center;
+    background-size: 180px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    }
+    
+    /*scrap collection*/
+    .scrap h1{
+      color: rgb(30, 160, 138);
+       font-size: 50px;
+        filter: drop-shadow(20px 20px 20px rgb(32, 213, 245));
+
+    }
+    .scrap p{
+        font-family: cursive;
+        font-size: 25px;
+        color: #14110e;
+    }
+</style>
+<body>
+      <!--Preloader-->
+  <div id="preloader"></div>
+
+   <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+     loader.style.display ="none"
+    })
+  </script>
+       <!--end preloader-->
+
+  <div class="scrap">
+
+    <h1>
+
+        Scrap collection :-
+    </h1>
+    <p>
+        Doorstep collection of recyclable waste.
+Purchase of recyclable materials like paper, cardboard, plastic, metal, glass, etc.
+Electronic waste (e-waste) collection and recycling.
+Organized and safe disposal of non-recyclable waste.
+Awareness and educational campaigns about recycling and waste reduction.
+Partnerships with local businesses and municipalities to manage waste effectively.
+    </p>
+  </div>
+  
+    <div class="scrap">
+        <h1>
+            Zero Waste society :-
+        </h1>
+        <p>
+            A zero waste society prioritizes sustainability by aiming to reduce and eventually eliminate waste altogether. Such a society values resources by ensuring products are designed for longevity and recycling. The core principle is to prevent waste from being sent to landfills, incinerators, or the ocean. Instead, resources are continually reused, repaired, and recycled, creating a circular economy. Zero waste promotes a more thoughtful consumption pattern, considering the full lifecycle of products. It fosters creativity and innovation in reducing environmental impact. Adopting this approach benefits both the environment and future generations.
+        </p>
+  </div>
+</body>
+</html>
